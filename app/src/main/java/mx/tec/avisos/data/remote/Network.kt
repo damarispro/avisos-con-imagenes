@@ -10,9 +10,8 @@ import retrofit2.Retrofit
 import retrofit2.converter.kotlinx.serialization.asConverterFactory
 
 object Network {
-
-    private const val BASE_URL = "https://startdroid.com/api/"
-
+    // Tu servidor, visto desde el emulador. En un teléfono físico sería la IP de tu máquina en la red local.
+    private const val BASE_URL = "https://cam-gas-martin-bytes.trycloudflare.com"
     private val json = Json {
         ignoreUnknownKeys = true
         explicitNulls = false
